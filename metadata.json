@@ -1,0 +1,6 @@
+{
+  "name": "VibeHue Studio - Color & Vibration Experience",
+  "description": "An interactive full-screen color display changing app with custom vibration patterns, ambient audio synthesizer, and 3-tap center screen lock/unlock navigation controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

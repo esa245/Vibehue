@@ -1,0 +1,112 @@
+import { ColorPreset, VibrationPreset } from './types';
+
+export const COLOR_PRESETS: ColorPreset[] = [
+  {
+    id: 'spectrum',
+    nameBn: 'রেইনবো ডিস্কো (Rainbow Disco)',
+    nameEn: 'Rainbow Disco Strobe',
+    colors: ['#FF0055', '#7A00FF', '#00E5FF', '#00FF66', '#FFE600', '#FF5500'],
+    type: 'smooth',
+    defaultSpeed: 1.2,
+    icon: 'Sparkles',
+  },
+  {
+    id: 'zen',
+    nameBn: 'শান্তি ও রিল্যাক্সেশন (Zen Relaxation)',
+    nameEn: 'Zen Ambient Flow',
+    colors: ['#0B192C', '#1E3E62', '#00879E', '#00B4D8', '#90E0EF'],
+    type: 'smooth',
+    defaultSpeed: 3.5,
+    icon: 'Waves',
+  },
+  {
+    id: 'cyber',
+    nameBn: 'সাইবার নিয়ন (Cyber Neon)',
+    nameEn: 'Cyberpunk Neon Strobe',
+    colors: ['#FF007F', '#00F5FF', '#7B00FF', '#39FF14'],
+    type: 'strobe',
+    defaultSpeed: 0.5,
+    icon: 'Zap',
+  },
+  {
+    id: 'sunset',
+    nameBn: 'উষ্ণ সূর্যাস্ত (Warm Sunset)',
+    nameEn: 'Warm Sunset Glow',
+    colors: ['#2B0B3A', '#801336', '#C72C41', '#EE4540', '#F67280'],
+    type: 'smooth',
+    defaultSpeed: 2.2,
+    icon: 'Sun',
+  },
+  {
+    id: 'aurora',
+    nameBn: 'অরোরা লাইট (Aurora Lights)',
+    nameEn: 'Aurora Borealis',
+    colors: ['#031B1E', '#013A40', '#006B6C', '#3BB273', '#7768AE'],
+    type: 'smooth',
+    defaultSpeed: 3.0,
+    icon: 'Compass',
+  },
+  {
+    id: 'strobe',
+    nameBn: 'ফ্ল্যাশ লাইট স্ট্রোক (Flash Strobe)',
+    nameEn: 'Pure Flash Strobe',
+    colors: ['#FFFFFF', '#000000', '#FF0033', '#FFFFFF'],
+    type: 'strobe',
+    defaultSpeed: 0.25,
+    icon: 'Activity',
+  },
+  {
+    id: 'warm',
+    nameBn: 'গোল্ডেন ফায়ার (Golden Fire)',
+    nameEn: 'Golden Flame Wave',
+    colors: ['#4A0E17', '#8B1E0F', '#D94E1F', '#F2994A', '#F2C94C'],
+    type: 'smooth',
+    defaultSpeed: 1.8,
+    icon: 'Flame',
+  },
+];
+
+export const VIBRATION_PRESETS: VibrationPreset[] = [
+  {
+    id: 'pulse',
+    nameBn: 'পালস বিট (Pulse)',
+    nameEn: 'Rhythmic Pulse',
+    pattern: [120, 60, 120, 60],
+  },
+  {
+    id: 'heartbeat',
+    nameBn: 'হার্টবিট (Heartbeat)',
+    nameEn: 'Heartbeat Double Tap',
+    pattern: [90, 80, 160, 300],
+  },
+  {
+    id: 'heavy',
+    nameBn: 'হেভি বাজ (Heavy Buzz)',
+    nameEn: 'Heavy Buzz Vibration',
+    pattern: [250, 50, 250],
+  },
+  {
+    id: 'constant',
+    nameBn: 'কন্টিনিউয়াস (Continuous)',
+    nameEn: 'Constant Pulse Wave',
+    pattern: [400, 100],
+  },
+  {
+    id: 'subtle',
+    nameBn: 'হালকা টেকটাইল (Subtle Haptic)',
+    nameEn: 'Subtle Haptic Click',
+    pattern: [40, 40, 40],
+  },
+  {
+    id: 'sos',
+    nameBn: 'এসওএস সকেটস (SOS Emergency)',
+    nameEn: 'SOS Rhythm',
+    pattern: [100, 50, 100, 50, 100, 200, 300, 50, 300, 50, 300, 200, 100, 50, 100, 50, 100],
+  },
+  {
+    id: 'off',
+    nameBn: 'বন্ধ (Off)',
+    nameEn: 'Mute Vibration',
+    pattern: [],
+  },
+];
